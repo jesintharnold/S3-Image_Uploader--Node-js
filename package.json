@@ -1,0 +1,24 @@
+{
+  "name": "image-s3-backend",
+  "version": "1.0.0",
+  "description": "A Backend for S3 Image Upload to AWS",
+  "main": "Back/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "Back/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "append-field": "^1.0.0",
+    "aws-sdk": "^2.912.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "utf8": "^3.0.0",
+    "uuid": "^3.3.2"
+  }
+}
