@@ -41,7 +41,7 @@ if(boundary_data[0]==="multipart/form-data"){
                         let contentType=part.match(/(?:Content-Type:)(.*?)(?:\r\n)/)?.[1];
                         file["filename"]=filename.toString().trim();
                         file["Content-Type"]=contentType.toString().trim();
-                        let regex_match_file=`Content-Type: image/jpeg\r\n\r\n`;
+                        let regex_match_file=`Content-Type: ${contentType.toString().trim()}\r\n\r\n`;
                         let regex_match_end=`--${boundary_split_string}`;
                         let cnt=absolute.toString().indexOf(regex_match_file)+regex_match_file.length;
                         buffer_count=(cnt!==-1)?cnt:buffer_count;
