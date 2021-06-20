@@ -29,7 +29,7 @@ export const EndScreen=({link})=>{
           {load?null:"Loading..."}
 
           {<img
-              src={link.toString()}
+              src={link}
               onLoad={onImageLoad}
               style={{display:load?"block":"none"}}
           />}
